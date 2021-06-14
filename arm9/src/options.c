@@ -56,6 +56,8 @@ void Options_SetTextSpeed(struct Options * options, u16 textSpeed) {
 }
 
 u32 Options_GetTextFrameDelay(struct Options * options) {
+	return 1; //always fast
+	
     u16 textSpeed = Options_GetTextSpeed(options);
 
     if (textSpeed == 0) {
