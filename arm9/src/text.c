@@ -168,8 +168,6 @@ THUMB_FUNC u16 AddTextPrinter(struct TextPrinterTemplate *printerTemplate, u32 s
 {
     if (!gFonts)
         return 0xff;
-	
-	speed = 1; // always fast
 
     struct TextPrinter *printer = (struct TextPrinter *)AllocFromHeap(0, sizeof(struct TextPrinter));
 
