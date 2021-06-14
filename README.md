@@ -2,7 +2,9 @@
 
 [![build](https://github.com/pret/pokediamond/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/pret/pokediamond/actions/workflows/build.yml)
 
-This is a decompilation of Pokémon Diamond.
+This is a decompilation of Pokémon Diamond. This version is to be used for Screenshake Club. https://leif.gg/tpp/new/
+
+## Original README
 
 It builds the following ROMs:
 
