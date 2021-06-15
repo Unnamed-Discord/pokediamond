@@ -2529,14 +2529,19 @@ _021D8996:
 	ldr r1, _021D8A54 ; =MOD14_021D9138
 	bl MOD14_021D7610
 	pop {r3, r4, r5, pc}
+# RELEASE
 _021D899E:
-	ldr r1, _021D8A58 ; =MOD14_021D9C98
-	bl MOD14_021D7610
-	pop {r3, r4, r5, pc}
+	# Close menu instead
+	b _021D89CA
+	# ldr r1, _021D8A58 ; =MOD14_021D9C98
+	# bl MOD14_021D7610
+	# pop {r3, r4, r5, pc}
+# SUMMARY
 _021D89A6:
 	ldr r1, _021D8A5C ; =MOD14_021DA2C8
 	bl MOD14_021D7610
 	pop {r3, r4, r5, pc}
+# GIVE ITEM
 _021D89AE:
 	bl MOD14_021DC430
 	cmp r0, #0
@@ -2545,11 +2550,13 @@ _021D89AE:
 	add r0, r4, #0
 	bl MOD14_021D7610
 	pop {r3, r4, r5, pc}
+# TAKE ITEM
 _021D89C0:
 	ldr r1, _021D8A64 ; =MOD14_021DA5F0
 	add r0, r4, #0
 	bl MOD14_021D7610
 	pop {r3, r4, r5, pc}
+# CANCEL?
 _021D89CA:
 	bl MOD14_021DC170
 	ldr r1, [r4, #8]
@@ -9131,7 +9138,7 @@ MOD14_021DBE34: ; 0x021DBE34
 	.align 2, 0
 
 	thumb_func_start MOD14_021DBE4C
-MOD14_021DBE4C: ; 0x021DBE4C
+MOD14_021DBE4C: ; 0x021DBE4C # PC Release - end of animation?
 	push {r3, r4, r5, lr}
 	add r5, r0, #0
 	add r4, r5, #0
