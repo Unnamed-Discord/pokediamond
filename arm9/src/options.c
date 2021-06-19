@@ -80,6 +80,7 @@ void Options_SetSoundMethod(struct Options * options, u16 soundMethod) {
 }
 
 u16 Options_GetBattleScene(struct Options * options) {
+	return 0; // battle scene always off
     return options->battleScene;
 }
 
@@ -96,6 +97,7 @@ void Options_SetBattleStyle(struct Options * options, u16 battleStyle) {
 }
 
 u16 Options_GetButtonMode(struct Options * options) {
+	return 1; // always Start = X (for simplicity)
     return options->buttonMode;
 }
 

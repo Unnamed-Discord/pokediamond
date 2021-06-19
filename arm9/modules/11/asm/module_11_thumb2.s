@@ -72803,6 +72803,7 @@ MOD11_02252A1C: ; 0x02252A1C
 _02252A2E:
 	ldr r1, [r4, #0x30]
 	add r0, r4, #0
+	# Controls HP drain?
 	bl MOD11_02257150
 	ldrb r0, [r4]
 	add r0, r0, #1

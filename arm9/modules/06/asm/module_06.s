@@ -34214,6 +34214,7 @@ MOD06_0224A0F0: ; 0x0224A0F0
 	lsl r0, r0, #0x10
 	asr r0, r0, #0x10
 	add pc, r0
+# don't touchy!
 _0224A104: ; jump table
 	.short _0224A110 - _0224A104 - 2 ; case 0
 	.short _0224A114 - _0224A104 - 2 ; case 1
